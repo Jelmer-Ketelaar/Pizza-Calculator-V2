@@ -2,19 +2,77 @@
 	Naam opdracht: Pizza Calculator -->
 <html lang="nl">
 <head>
-    <script src="js/script.js"></script>
+
     <meta http-equiv="Content-Type" content="text/ javascript;charset=UTF-8">
-    <title> Ketelaar pizza </title>
+    <title> Don Ciccio </title>
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
-<h1> Ketelaar pizza </h1>
-<form>
-    <fieldset>
-        <legend>Select a pizza size, and type how many pizza's you want.</legend>
-    </fieldset>
-</form>
+        
+<div class="w3-container">
+    <img src="img/don ciccio.jpg" style=" width: 350px; display: block; margin: auto; ">
+    <ul class="w3-ul w3-card-4">
+      <li class="w3-bar">
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-bar-item w3-right w3-xlarge w3-white">+</button>
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content">
+              <div class="w3-container">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                class="w3-button w3-display-topright">&times;</span>
+                <p>Toegevoegd aan winkelkarretje</p>
+              </div>
+            </div>
+          </div>
+        <img src="img/pizza-sinterklaas.jpeg" class="w3-bar-item w3-circle w3-hide-small" style="width:300px">
+        <div class="w3-bar-item">
+          <span class="w3-large">Sinterklaas pizza</span><br>
+          <span><b>Pizza met: </b></span>
+        </div>
+      </li>
+
+        <li class="w3-bar">
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-bar-item w3-right w3-xlarge w3-white">+</button>
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content">
+                  <div class="w3-container">
+                    <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                    <p>Some text in the Modal..</p>
+                    <p>Some text in the Modal..</p>
+                  </div>
+                </div>
+              </div>
+            <img src="img/vega-pizza.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:300px">
+            <div class="w3-bar-item">
+                <span class="w3-large">Vegetarische Pizza</span><br>
+                <span><b>Pizza met: </b></span>
+            </div>
+        </li>
+
+        <li class="w3-bar">
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-bar-item w3-right w3-xlarge w3-white">+</button>
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content">
+                  <div class="w3-container">
+                    <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                    <p>Some text in the Modal..</p>
+                    <p>Some text in the Modal..</p>
+                  </div>
+                </div>
+              </div>
+            <img src="img/salami-pizza.jpeg" class="w3-bar-item w3-circle w3-hide-small" style=" height:280px ; width:300px">
+            <div class="w3-bar-item">
+                <span class="w3-large">Salami Pizza</span><br>
+                <span><b>Pizza met: </b>Salami</span>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
 </body>
 
+<i><b><script src="js/script.js"></script></b></i>
