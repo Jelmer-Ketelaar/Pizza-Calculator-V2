@@ -2,3 +2,12 @@
    display: block;
    margin: auto;
 }
+
+.footer {
+   background-color: aqua;
+   height: 100px;
+}
+
+.name {
+   margin-top: 50px;;
+}
