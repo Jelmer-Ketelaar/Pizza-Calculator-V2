@@ -320,15 +320,15 @@ a {
 
 .w3-disabled, .w3-btn:disabled, .w3-button:disabled {
     cursor: not-allowed;
-    opacity: 0.3
+    opacity: 0.3;
 }
 
 .w3-disabled *, :disabled * {
-    pointer-events: none
+    pointer-events: none;
 }
 
 .w3-btn.w3-disabled:hover, .w3-btn:disabled:hover {
-    box-shadow: none
+    box-shadow: none;
 }
 
 .w3-badge, .w3-tag {
@@ -352,7 +352,8 @@ a {
 
 .w3-ul li {
     padding: 8px 16px;
-    border-bottom: 1px solid #ddd
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd
 }
 
 .w3-ul li:last-child {
@@ -410,7 +411,7 @@ a {
 }
 
 .w3-dropdown-hover:hover > .w3-button:first-child, .w3-dropdown-click:hover > .w3-button:first-child {
-    background-color: #ccc;
+    background-color: rgb(204, 204, 204);
     color: #000
 }
 
@@ -435,7 +436,7 @@ a {
 
 .w3-sidebar {
     height: 100%;
-    width: 200px;
+    width: 500px;
     background-color: #fff;
     position: fixed !important;
     z-index: 1;
@@ -447,13 +448,13 @@ a {
 }
 
 .w3-bar-block .w3-dropdown-hover .w3-dropdown-content, .w3-bar-block .w3-dropdown-click .w3-dropdown-content {
-    min-width: 100%
+    width: 100%
 }
 
 .w3-bar-block .w3-dropdown-hover .w3-button, .w3-bar-block .w3-dropdown-click .w3-button {
     width: 100%;
     text-align: left;
-    padding: 8px 16px
+    padding: 8px 16px;
 }
 
 .w3-main, #main {
@@ -970,7 +971,8 @@ a {
 }
 
 .w3-container, .w3-panel {
-    padding: 0.01em 16px
+    padding: 0.01em 16px;
+    margin-bottom: 5px;
 }
 
 .w3-panel {

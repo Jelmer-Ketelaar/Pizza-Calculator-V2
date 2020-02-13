@@ -3,23 +3,43 @@
 <html lang="nl">
 <head>
 
-    <meta http-equiv="Content-Type" content="text/ javascript;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Don Ciccio </title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
 
-<div class="w3-container">
-    <header> <img src="img/don ciccio.jpg" alt="don ciccio" class="don-ciccio" width="350px;"></header>
 
+    <div class="w3-container">
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-zoom" style="display:none; right:0;" id="rightMenu">
+        
+        <header class="w3-bar-item w3-dark-gray"><h3>Winkelwagen</h3></header>
+        <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Sluiten &times;</button>
+
+
+      </div>
+      
+      <div class="w3-teal">
+        
+        <button class="w3-button w3-teal w3-xlarge w3-right " onclick="openRightMenu()"><span class="glyphicon glyphicon-shopping-cart"></span> Winkelwagen</button>
+        <div class="w3-container">
+            <img src="img/don-ciccio.jpg" style="max-width:320px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 10px;">
+        </div>
+      </div>
+        
+      </div>
+      <div class="w3-container">
     <ul class="w3-ul w3-card-4">
         <li class="w3-bar">
+<!-- Trigger for the modal -->
             <button onclick="document.getElementById('id01').style.display='block'"
-                    class="w3-button w3-bar-item w3-right w3-xlarge w3-white">+
-            </button>
-
+                    class="w3-button w3-bar-item w3-right w3-xlarge w3-gray w3-round">Info
+</button>
+<!-- Modal content -->
             <div id="id01" class="w3-modal">
                 <div class="w3-modal-content">
                     <div class="w3-container">
@@ -27,22 +47,22 @@
                       class="w3-button w3-display-topright">&times;</span>
                       <header><h3>Sinterklaas Pizza</h3></header>
                         <img src="img/pizza-sinterklaas.jpeg" class="w3-bar-item w3-circle">
-                        
+                        <p><button class="card-button">Add to Cart</button></p>
                     </div>
                 </div>
             </div>
-            
+<!-- List -->
             <img src="img/pizza-sinterklaas.jpeg" class="w3-bar-item w3-circle" style="width:300px">
             <div class="w3-bar-item">
                 <span class="w3-large">Sinterklaas pizza</span><br>
-                <span><i>Dit is een pizza die eruit ziet als de meiter van Sinterklaas </i></span>
+                <span><i>Dit is een pizza die eruit ziet als de mijter van Sinterklaas </i></span>
             </div>
         </li>
 
         <li class="w3-bar">
             <button onclick="document.getElementById('id02').style.display='block'"
-                    class="w3-button w3-bar-item w3-right w3-xlarge w3-white">+
-            </button>
+            class="w3-button w3-bar-item w3-right w3-xlarge w3-gray w3-round">Info
+        </button>
             <div id="id02" class="w3-modal">
                 <div class="w3-modal-content">
                     <div class="w3-container">
@@ -50,9 +70,12 @@
                           class="w3-button w3-display-topright">&times;</span>
                         <p>Some text in the Modal..</p>
                         <p>Some text in the Modal..</p>
+                        <p><button class="card-button">Add to Cart</button></p>
+                        
                     </div>
                 </div>
             </div>
+<!-- List -->
             <img src="img/vega-pizza.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:300px">
             <div class="w3-bar-item">
                 <span class="w3-large">Vegetarische Pizza</span><br>
@@ -60,10 +83,10 @@
             </div>
         </li>
 
-        <li class="w3-bar">
-            <button onclick="document.getElementById('id01').style.display='block'"
-                    class="w3-button w3-bar-item w3-right w3-xlarge w3-white">+
-            </button>
+        <li class="w3-bar"> 
+            <button onclick="document.getElementById('id03').style.display='block'"
+            class="w3-button w3-bar-item w3-right w3-xlarge w3-gray w3-round">Info
+        </button>
             <div id="id03" class="w3-modal">
                 <div class="w3-modal-content">
                     <div class="w3-container">
@@ -79,16 +102,35 @@
             <div class="w3-bar-item">
                 <span class="w3-large">Salami Pizza</span><br>
                 <span><i>Dit is een pizza met als topping salami </i></span>
-                
             </div>
         </li>
-        
-    </ul>
-    <footer class="footer"> <i class="name">@Jelmer Ketelaar</i>  </footer>
+    
+    <li class="w3-bar"> 
+        <button onclick="document.getElementById('id04').style.display='block'"
+        class="w3-button w3-bar-item w3-right w3-xlarge w3-gray w3-round w3-text-white">Info
+    </button>
+        <div id="id04" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                <span onclick="document.getElementById('id04').style.display='none'"
+                      class="w3-button w3-display-topright">&times;</span>
+                    <p>Some text in the Modal..</p>
+                    <p>Some text in the Modal..</p>
+                </div>
+            </div>
+        </div>
+        <img src="img/margherita.jpg" class="w3-bar-item w3-circle w3-hide-small"
+             style=" height:280px ; width:300px">
+        <div class="w3-bar-item">
+            <span class="w3-large">Salami Pizza</span><br>
+            <span><i>Dit is een pizza met kaas en tomatensaus </i></span>
+        </div>
+    </li>
+</ul>
+    <footer class="footer"> <h4 class="name"> @Jelmer Ketelaar</h4></footer>   
+
+    
 </div>
 
-
 </body>
-
-
     <script src="js/script.js"></script>
