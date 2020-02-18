@@ -1,31 +1,35 @@
-.don-ciccio {
-   display: block;
-   margin: auto;
+body {
+    font-family: 'Open Sans', sans-serif;
 }
 
+
 footer {
-   background-color: aqua;
-   height: 100px;   
+    height: 100px;
 }
 
 .name {
-   text-align: center;
-   font-style: italic;
+    text-align: center;
+    font-style: italic;
 
 }
 
 .card-button {
-   border: none;
-   outline: 0;
-   padding: 12px;
-   color: white;
-   background-color: #000;
-   text-align: center;
-   cursor: pointer;
-   width: 100%;
-   font-size: 18px;
- }
- 
- .card-button:hover {
-   opacity: 0.7;
- }
+    border: none;
+    outline: 0;
+    padding: 12 12 10 10px;
+    
+    color: white;
+    background-color: green;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card-button:hover {
+    opacity: 0.7;
+}
+
+#size {
+    cursor: pointer;
+}

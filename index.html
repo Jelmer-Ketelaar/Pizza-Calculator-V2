@@ -8,90 +8,125 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
 
 
-    <div class="w3-container">
-    <div class="w3-sidebar w3-bar-block w3-card w3-animate-zoom" style="display:none; right:0;" id="rightMenu">
-        
-        <header class="w3-bar-item w3-dark-gray"><h3>Winkelwagen</h3></header>
-        <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Sluiten &times;</button>
-
-
-      </div>
-      
-      <div class="w3-teal">
-        
-        <button class="w3-button w3-teal w3-xlarge w3-right " onclick="openRightMenu()"><span class="glyphicon glyphicon-shopping-cart"></span> Winkelwagen</button>
-        <div class="w3-container">
-            <img src="img/don-ciccio.jpg" style="max-width:320px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 10px;">
-        </div>
-      </div>
-        
-      </div>
-      <div class="w3-container">
-    <ul class="w3-ul w3-card-4">
-        <li class="w3-bar">
-<!-- Trigger for the modal -->
-            <button onclick="document.getElementById('id01').style.display='block'"
-                    class="w3-button w3-bar-item w3-right w3-xlarge w3-gray w3-round">Info
-</button>
-<!-- Modal content -->
-            <div id="id01" class="w3-modal">
-                <div class="w3-modal-content">
-                    <div class="w3-container">
-                <span onclick="document.getElementById('id01').style.display='none'"
-                      class="w3-button w3-display-topright">&times;</span>
-                      <header><h3>Sinterklaas Pizza</h3></header>
-                        <img src="img/pizza-sinterklaas.jpeg" class="w3-bar-item w3-circle">
-                        <p><button class="card-button">Add to Cart</button></p>
+<div class="w3-container"> 
+    <div class=" w3-mobile ">
+        <div class="w3-container w3-mobile">
+            <!-- Trigger/Open the Modal -->
+            <button onclick="document.getElementById('cart').style.display='block'"
+                        class="w3-button w3-bar-item w3-right w3-xlarge w3-white w3-round w3-mobile" style="margin-top: 10vh;"><i class="fas fa-shopping-cart"></i> Winkelwagen
+                    </button>
+                <div id="cart" class="w3-modal w3-animate-opacity">
+                    <div class="w3-modal-content ">
+                        <div class="w3-container">
+                    <span onclick="document.getElementById('cart').style.display='none'"
+                          class="w3-button w3-display-topright">Sluiten &times;</span>
+                            <header id="header"><h3>Winkelwagen</h3></header>
+                            
+                        
+                            <p>
+                                <button class="card-button">Checkout</button>
+                            </p>
+                        </div>
                     </div>
                 </div>
+                        <img src="img/pizzaria.png" height="200px" style="background-color: transparent;"></h1>
+                    </div>
+                </div>
+</div>
+<div class="w3-container w3-mobile">
+    <ul class="w3-ul w3-card-4 w3-mobile">
+        <li class="w3-bar ">
+            <!-- Trigger for the modal -->
+            <button onclick="document.getElementById('id01').style.display='block'"
+                    class="w3-button w3-bar-item w3-right w3-xlarge w3-gray w3-round w3-mobile">Informatie
+            </button>
+            
+            <!-- Modal content -->
+            
+            <div id="id01" class="w3-modal w3-animate-opacity">
+                <div class="w3-modal-content w3-mobile">
+                    <div class="w3-container w3-mobile">
+                        
+                <span onclick="document.getElementById('id01').style.display='none'"
+                      class="w3-button w3-animate-zoom w3-mobile w3-display-topright">Sluiten &times;</span>
+                        <header><h3 class="w3-animate-zoom">Sinterklaas Pizza</h3></header>
+                        <img src="img/pizza-sinterklaas.jpeg" class="w3-mobile w3-bar-item w3-circle w3-animate-zoom">
+                        
+                          <p></p>  
+                    </div>
+                    <div class="w3-animate-zoom w3-center"> 
+                          
+                        </div>
+                        <form class="w3-container w3-card-4">
+                            
+                            <h2>Toppings</h2>
+                            <p>
+                            <input class="w3-check" type="checkbox" checked="checked">
+                            <label>Knoflook</label></p>
+                            <p>
+                            <input class="w3-check" type="checkbox">
+                            <label> Salami </label></p>
+                            <p>
+                            <input class="w3-check" type="checkbox">
+                            <label>Shoarma </label></p>
+                            <p>
+                            <input class="w3-check" type="checkbox">
+                            <label>Mozzarella </label></p>
+                          </form>
+                            <button class="card-button">Toevoegen aan winkelwagen</button>
+                        
+                </div>
             </div>
-<!-- List -->
-            <img src="img/pizza-sinterklaas.jpeg" class="w3-bar-item w3-circle" style="width:300px">
+            <!-- List -->
+            <img src="img/pizza-sinterklaas.jpeg" class="w3-bar-item w3-mobile w3-circle" style="width:300px">
             <div class="w3-bar-item">
-                <span class="w3-large">Sinterklaas pizza</span><br>
-                <span><i>Dit is een pizza die eruit ziet als de mijter van Sinterklaas </i></span>
+                <span class="w3-large"><h3>Sinterklaas Pizza</h3></span>
+                <span><i class="w3-mobile">Dit is een pizza die eruit ziet als de mijter van Sinterklaas </i></span>
             </div>
         </li>
 
-        <li class="w3-bar">
+        <li class="w3-bar w3-mobile">
             <button onclick="document.getElementById('id02').style.display='block'"
-            class="w3-button w3-bar-item w3-right w3-xlarge w3-gray w3-round">Info
-        </button>
-            <div id="id02" class="w3-modal">
-                <div class="w3-modal-content">
+                    class="w3-button w3-mobile w3-bar-item w3-right w3-xlarge w3-gray w3-round">Informatie
+            </button>
+            <div id="id02" class="w3-modal ">
+                <div class="w3-modal-content w3-mobile">
                     <div class="w3-container">
                     <span onclick="document.getElementById('id02').style.display='none'"
-                          class="w3-button w3-display-topright">&times;</span>
-                        <p>Some text in the Modal..</p>
-                        <p>Some text in the Modal..</p>
-                        <p><button class="card-button">Add to Cart</button></p>
-                        
+                          class="w3-button w3-display-topright">Sluiten &times;</span>
+                          <header><h3>Sinterklaas Pizza</h3></header>
+                          <img src="img/vega-pizza.jpg" class="w3-bar-item w3-circle">
+                          <p>
+                              <button class="card-button">Toevoegen aan winkelwagen</button>
+                          </p>
+
                     </div>
                 </div>
             </div>
-<!-- List -->
+            <!-- List -->
             <img src="img/vega-pizza.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:300px">
             <div class="w3-bar-item">
-                <span class="w3-large">Vegetarische Pizza</span><br>
-                <span><i>Dit is een pizza die gemaakt is van vegetarische ingrediënten </i></span>
+                <span class="w3-large"><h3>Vegetarische Pizza</h3></span>
+                <span><i>Dit is een pizza die gemaakt is van vegetarische ingredi&euml;nten </i></span>
             </div>
         </li>
 
-        <li class="w3-bar"> 
+        <li class="w3-bar">
             <button onclick="document.getElementById('id03').style.display='block'"
-            class="w3-button w3-bar-item w3-right w3-xlarge w3-gray w3-round">Info
-        </button>
+                    class="w3-button w3-bar-item w3-right w3-xlarge w3-gray w3-round">Informatie
+            </button>
             <div id="id03" class="w3-modal">
                 <div class="w3-modal-content">
                     <div class="w3-container">
                     <span onclick="document.getElementById('id03').style.display='none'"
-                          class="w3-button w3-display-topright">&times;</span>
+                          class="w3-button w3-display-topright">Sluiten &times;</span>
                         <p>Some text in the Modal..</p>
                         <p>Some text in the Modal..</p>
                     </div>
@@ -100,37 +135,37 @@
             <img src="img/salami-pizza.jpeg" class="w3-bar-item w3-circle w3-hide-small"
                  style=" height:280px ; width:300px">
             <div class="w3-bar-item">
-                <span class="w3-large">Salami Pizza</span><br>
+                <span class="w3-large"><h3>Salami Pizza</h3></span>
                 <span><i>Dit is een pizza met als topping salami </i></span>
             </div>
         </li>
-    
-    <li class="w3-bar"> 
-        <button onclick="document.getElementById('id04').style.display='block'"
-        class="w3-button w3-bar-item w3-right w3-xlarge w3-gray w3-round w3-text-white">Info
-    </button>
-        <div id="id04" class="w3-modal">
-            <div class="w3-modal-content">
-                <div class="w3-container">
+
+        <li class="w3-bar">
+            <button onclick="document.getElementById('id04').style.display='block'"
+                    class="w3-button w3-bar-item w3-right w3-xlarge w3-gray w3-round">Informatie
+            </button>
+            <div id="id04" class="w3-modal">
+                <div class="w3-modal-content">
+                    <div class="w3-container">
                 <span onclick="document.getElementById('id04').style.display='none'"
-                      class="w3-button w3-display-topright">&times;</span>
-                    <p>Some text in the Modal..</p>
-                    <p>Some text in the Modal..</p>
+                      class="w3-button w3-display-topright">Sluiten &times;</span>
+                        <p>Some text in the Modal..</p>
+                        <p>Some text in the Modal..</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <img src="img/margherita.jpg" class="w3-bar-item w3-circle w3-hide-small"
-             style=" height:280px ; width:300px">
-        <div class="w3-bar-item">
-            <span class="w3-large">Salami Pizza</span><br>
-            <span><i>Dit is een pizza met kaas en tomatensaus </i></span>
-        </div>
-    </li>
-</ul>
-    <footer class="footer"> <h4 class="name"> @Jelmer Ketelaar</h4></footer>   
+            <img src="img/margherita.jpg" class="w3-bar-item w3-circle w3-hide-small"
+                 style=" height:280px ; width:300px">
+            <div class="w3-bar-item">
+                <span class="w3-large"><h3>Pizza Margarita</h3></span>
+                <span><i>Dit is een pizza met kaas en tomatensaus </i></span>
+            </div>
+        </li>
+    </ul>
+    <footer class="w3-teal w3-text-white"><h4 class="name"> @Jelmer Ketelaar</h4></footer>
 
-    
+
 </div>
 
 </body>
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
