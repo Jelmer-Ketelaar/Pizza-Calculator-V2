@@ -17,7 +17,7 @@ footer {
     border: none;
     outline: 0;
     padding: 12 12 10 10px;
-    
+
     color: white;
     background-color: green;
     text-align: center;
@@ -32,4 +32,12 @@ footer {
 
 #size {
     cursor: pointer;
+}
+
+.vega-pizza {
+    height: 25vh;
+}
+
+#exit {
+    float: right;
 }
