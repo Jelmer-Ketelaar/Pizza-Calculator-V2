@@ -10,14 +10,10 @@ document.getElementById('pizza-list').innerHTML = '';
 let li;
 for (i = 0; i < pizzas.length; i++) {
     li = document.createElement('LI');
-    li.innerHTML = pizzas[i].name;
+    li.innerHTML = '<img src="' + pizzas[i].img + '" alt="pizza-img">' + pizzas[i].name;
     document.getElementById('pizza-list').appendChild(li);
 }
 
 
-for (let a = 0; a < pizzas.length; a++) {
-    li = document.createElement('LI');
-    li.innerHTML = '<img src="' + pizzas[a].img + '" alt="pizza-img">'
-    document.getElementById("pizza-list").appendChild(li);
-}
+
 
