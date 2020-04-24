@@ -5,7 +5,8 @@
 <head>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Don Ciccio </title>
+
+    <title> Pizza-Calculator </title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/w3.css">
@@ -13,231 +14,53 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js/script.js"></script>
+
 </head>
 
-<body onload="doShowAll()">
+<body>
 
-
-    <div class="w3-container">
-        <div class=" w3-mobile ">
-            <div class="w3-container w3-mobile">
-                <!-- Trigger/Open the Modal -->
-
-                <img src="img/pizzaria.png" height="200px" style="background-color: transparent;"></h1>
-            </div>
-        </div>
-    </div>
-    <div class="w3-container w3-mobile">
-        <ul class="w3-ul w3-card-4 w3-mobile">
-            <li class="w3-bar ">
-                <!-- Trigger for the modal -->
-
-                <button onclick="document.getElementById('id01').style.display='block'"
-                    class="w3-button w3-bar-item w3-right w3-xlarge w3-gray w3-round w3-mobile">Informatie
-                </button>
-
-
-                <!-- Modal content -->
-
-                <div id="id01" class="w3-modal w3-animate-opacity">
-                    <div class="w3-modal-content w3-mobile">
-                        <div class="w3-container w3-mobile">
-
-                            <span onclick="document.getElementById('id01').style.display='none'"
-                                class="w3-button w3-animate-zoom w3-mobile w3-display-topright">Sluiten &times;</span>
-                            <header>
-                                <h3 class="w3-animate-zoom">Sinterklaas Pizza</h3>
-                            </header>
-                            <img src="img/pizza-sinterklaas.jpeg"
-                                class="w3-mobile w3-bar-item w3-circle w3-animate-zoom">
-
-                            <p></p>
-
-                        </div>
-                        <div class="w3-animate-zoom w3-center">
-                            <h4 class="price">&euro;8,99</h4>
-                        </div>
-                        <form class="w3-container w3-card-4">
-
-                            <h2>Toppings</h2>
-                            <p>
-                                <input class="w3-check" type="checkbox" checked="checked">
-                                <label>Extra Knoflook +&euro;0,20</label></p>
-                            <p>
-                                <input class="w3-check" type="checkbox">
-                                <label> Extra Salami +&euro;0,20 </label></p>
-                            <p>
-                                <input class="w3-check" type="checkbox">
-                                <label> Extra Shoarma +&euro;0,20</label></p>
-                            <p>
-                                <input class="w3-check" type="checkbox">
-                                <label>Extra Mozzarella +&euro;0,20</label></p>
-                        </form>
-                        <button class="card-button">Toevoegen aan winkelwagen</button>
-
-                    </div>
-                </div>
-                <!-- List -->
-                <img src="img/pizza-sinterklaas.jpeg" class="w3-bar-item w3-mobile w3-circle" style="width:300px">
-                <div class="w3-bar-item">
-                    <span class="w3-large">
+    <!-- List Sinterklaas pizza-->
+    <ul id="pizza-list" class="w3-ul w3-card-4">
+        <li class="w3-bar w3-mobile">
+            <img id="img" src="img/pizza-sinterklaas.jpeg" class="w3-bar-item w3-mobile w3-circle" style="width:300px">
+            <div class="w3-bar-item">
+                <span class="w3-large">
                         <h3>Sinterklaas Pizza</h3>
                     </span>
-                    <span><i class="w3-mobile">Dit is een pizza die eruit ziet als de mijter van Sinterklaas </i></span>
-                </div>
-            </li>
+                <span><i>Dit is een pizza die eruit ziet als de mijter van Sinterklaas </i></span>
+            </div>
+        </li>
 
-            <li class="w3-bar w3-mobile">
-                <button onclick="document.getElementById('id02').style.display='block'"
-                    class="w3-button w3-mobile w3-bar-item w3-right w3-xlarge w3-gray w3-round">Informatie
-                </button>
-                <div id="id02" class="w3-modal w3-animate-opacity">
-                    <div class="w3-modal-content w3-mobile">
-                        <div class="w3-container">
-                            <span onclick="document.getElementById('id02').style.display='none'"
-                                class="w3-button w3-animate-left" id="exit">Sluiten &times;</span>
-                            <header>
-                                <h3>Vegetarische Pizza</h3>
-                            </header>
-                            <img src="img/vega-pizza.jpg" class="vega-pizza w3-bar-item w3-circle w3-animate-opacity">
-                            </img>
-                        </div>
-                        <div class="w3-animate-zoom w3-center">
-                            <h4 class="price">&euro;9,99</h4>
-                        </div>
-                        <form class="w3-container w3-card-4">
-
-                            <h2>Toppings</h2>
-                            <p>
-                                <input class="w3-check" type="checkbox" checked="checked">
-                                <label>Extra Knoflook   +&euro;0,20</label></p>
-                            <p>
-                                <input class="w3-check" type="checkbox">
-                                <label> Extra Salami    +&euro;0,20 </label></p>
-                            <p>
-                                <input class="w3-check" type="checkbox">
-                                <label> Extra Shoarma   +&euro;0,20</label></p>
-                            <p>
-                                <input class="w3-check" type="checkbox">
-                                <label>Extra Mozzarella +&euro;0,20</label></p>
-                        </form>
-                        <p>
-                            <button class="card-button w3-animate-bottom">Toevoegen aan winkelwagen</button>
-                        </p>
-
-
-                    </div>
-                </div>
-
-                <!-- List -->
-                <img src="img/vega-pizza.jpg" class="w3-bar-item w3-circle w3-hide-small " style="width:300px">
-                <div class="w3-bar-item">
-                    <span class="w3-large">
+        <!-- List Vega pizza-->
+        <li class="w3-bar w3-mobile">
+            <img src="img/vega-pizza.jpg" class="w3-bar-item w3-circle w3-hide-small " style="width:300px">
+            <div class="w3-bar-item">
+                <span class="w3-large">
                         <h3>Vegetarische Pizza</h3>
                     </span>
-                    <span><i>Dit is een pizza die gemaakt is van vegetarische ingredi&euml;nten </i></span>
-                </div>
-            </li>
+                <span><i>Dit is een pizza die gemaakt is van vegetarische ingredi&euml;nten </i></span>
+            </div>
+        </li>
 
-            <li class="w3-bar w3-mobile">
-                <button onclick="document.getElementById('id03').style.display='block'"
-                    class="w3-button w3-mobile w3-bar-item w3-right w3-xlarge w3-gray w3-round">Informatie
-                </button>
-                <div id="id03" class="w3-modal w3-animate-opacity">
-                    <div class="w3-modal-content w3-mobile">
-                        <div class="w3-container">
-                            <span onclick="document.getElementById('id03').style.display='none'"
-                                class="w3-button w3-animate-left" id="exit">Sluiten &times;</span>
-                            <header>
-                                <h3>Vegetarische Pizza</h3>
-                            </header>
-                            <img src="img/salami-pizza.jpeg"
-                                class="vega-pizza w3-bar-item w3-circle w3-animate-opacity">
-                            </img>
-                        </div>
-                        <div class="w3-animate-zoom w3-center">
-                            <h4 class="price">&euro;8,99</h4>
-                        </div>
-                        <form class="w3-container w3-card-4">
-                            <h2>Toppings</h2>
-                            <p>
-                                <input class="w3-check" type="checkbox" checked="checked">
-                                <label>Extra Knoflook +&euro;0,20</label></p>
-                            <p>
-                                <input class="w3-check" type="checkbox">
-                                <label> Extra Salami +&euro;0,20 </label></p>
-                            <p>
-                                <input class="w3-check" type="checkbox">
-                                <label> Extra Shoarma +&euro;0,20</label></p>
-                            <p>
-                                <input class="w3-check" type="checkbox">
-                                <label>Extra Mozzarella +&euro;0,20</label></p>
-                        </form>
-                        <p>
-                            <button class="card-button w3-animate-bottom">Toevoegen aan winkelwagen</button>
-                        </p>
+        <!-- List salami pizza-->
+        <li class="w3-bar w3-mobile">
+            <img src="img/salami-pizza.jpeg" class="w3-bar-item w3-circle w3-hide-small " style="width:300px; height: 27vh;">
+            <div class="w3-bar-item">
+                <span class="w3-large">
+                      <h3>Salami Pizza</h3>
+                  </span>
+                <span><i>Dit is een pizza met een topping van salami </i></span>
+            </div>
+        </li>
 
-
-                    </div>
-                </div>
-                <img src="img/salami-pizza.jpeg" class="w3-bar-item w3-circle" style=" height:280px ; width:300px">
-                <div class="w3-bar-item">
-                    <span class="w3-large">
-                        <h3>Salami Pizza</h3>
-                    </span>
-                    <span><i> Dit is een pizza met als topping salami </i></span>
-                </div>
-            </li>
-
-            <li class="w3-bar w3-mobile">
-                <button onclick="document.getElementById('id04').style.display='block'"
-                    class="w3-button w3-mobile w3-bar-item w3-right w3-xlarge w3-gray w3-round">Informatie
-                </button>
-                <div id="id04" class="w3-modal w3-animate-opacity">
-                    <div class="w3-modal-content w3-mobile">
-                        <div class="w3-container">
-                            <span onclick="document.getElementById('id04').style.display='none'"
-                                class="w3-button w3-animate-left" id="exit">Sluiten &times;</span>
-                            <header>
-                                <h3>Margherita Pizza</h3>
-                            </header>
-                            <img src="img/margherita.jpg"
-                                class="margherita-pizza w3-bar-item w3-circle w3-animate-opacity">
-                            </img>
-                        </div>
-                        <div class="w3-animate-zoom w3-center">
-                            <h4 class="price">&euro;7,99</h4>
-                        </div>
-                        <form class="w3-container w3-card-4">
-
-                            <h2>Toppings</h2>
-                            <p>
-                                <input class="w3-check" type="checkbox" checked="checked">
-                                <label>Extra Knoflook +&euro;0,20</label></p>
-                            <p>
-                                <input class="w3-check" type="checkbox">
-                                <label> Extra Salami +&euro;0,20 </label></p>
-                            <p>
-                                <input class="w3-check" type="checkbox">
-                                <label> Extra Shoarma +&euro;0,20</label></p>
-                            <p>
-                                <input class="w3-check" type="checkbox">
-                                <label>Extra Mozzarella +&euro;0,20</label></p>
-                        </form>
-                        <p>
-                            <button class="card-button w3-animate-bottom">Toevoegen aan winkelwagen</button>
-                        </p>
-
-
-                    </div>
-                </div>
-                <img src="img/margherita.jpg" class="w3-bar-item w3-circle w3-hide-small"
-                    style=" height:280px ; width:300px">
-                <div class="w3-bar-item">
-                    <span class="w3-large">
+        <!-- List Margherita pizza-->
+        <li class="w3-bar w3-mobile">
+            <img src="img/margherita.jpg" class="w3-bar-item w3-circle w3-hide-small" style=" height:280px ; width:300px">
+            <div class="w3-bar-item">
+                <span class="w3-large">
                         <h3>Pizza Margarita</h3>
                     </span>
+
                     <span><i>Dit is een pizza met kaas en tomatensaus </i></span>
                 </div>
             </li>
@@ -251,7 +74,15 @@
             <h4 class="name"> @Jelmer Ketelaar</h4>
         </footer>
 
+                <span><i>Dit is een pizza met kaas en tomatensaus </i></span>
+            </div>
+        </li>
+    </ul>
 
+
+
+    <script src="js/script.js"></script>
     </div>
 </body>
+
 </html>
